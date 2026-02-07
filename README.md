@@ -59,7 +59,7 @@ The **crypto_intel** platform follows a layered, scalable architecture designed 
 | Language | Python 3.10+ |
 | Web Framework | FastAPI |
 | ORM | SQLAlchemy 2.0 |
-| Database | PostgreSQL (SQLite for development) |
+| Database | PostgreSQL|
 | Task Queue | Celery |
 | Broker / Cache | Redis |
 | Config | Pydantic Settings |
@@ -116,7 +116,7 @@ cp .env.example .env
 
 Example .env:
 ```bash
-DATABASE_URL=sqlite:///./crypto.db
+DATABASE_URL=postgresql://postgres:my_password@localhost:5432/block_intel
 REDIS_URL=redis://localhost:6379/0
 COINGECKO_API=https://api.coingecko.com/api/v3
 ```
